@@ -15,7 +15,7 @@ http.createServer(function(req,res){
         res.end(JSON.stringify(retObj));
     }
     if('/api/unixtime'===obj.pathname){
-        var date = new Date(param.iso);
+        var date = new Date();
         var retObj = {unixtime: date.getTime()};
         res.end(JSON.stringify(retObj));
     }
